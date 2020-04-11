@@ -69,7 +69,7 @@ int main()
         
           {
 
-             cout << "Miami "  << day[j] << " = " << temperature[i][j] << endl;
+             cout << "Miami "  << day[j] << " = " << temperature[i][j] <<"°"<< endl;
 
            }
         }
@@ -78,7 +78,7 @@ int main()
             cout<<"\n\nNew York, NY:\n"<<endl;
           for(int j = 0; j < WEEK; ++j)
           {
-          cout << "New York "<< day[j] << " = " << temperature[i][j] << endl;
+          cout << "New York "<< day[j] << " = " << temperature[i][j]<<"°" << endl;
           }
         }
     }
