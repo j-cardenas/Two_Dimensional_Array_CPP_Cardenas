@@ -10,47 +10,7 @@
 
 using namespace std;
 
-/*
 
-Research Input data: go to http://www.weather.com
-
-Pick two cities of your choice. Fill in the temperature for the 7 days of this week of both cities. Fill in this text data table, which will be used in your program.
-
-//City_One = 1, City_Two = 2  Replace City_One and City_Two with the names of your cities
-
-//Data Table
-
-//City X, Day X: Temp
-
-City 1, Day 1: TEMP
-
-City 1, Day 2: TEMP
-
-City 1, Day 3: TEMP
-
-City 1, Day 4: TEMP
-
-City 1, Day 5: TEMP
-
-City 1, Day 6: TEMP
-
-City 1, Day 7: TEMP
-
-City 2, Day 1: TEMP
-
-City 2, Day 2: TEMP
-
-City 2, Day 3: TEMP
-
-City 2, Day 4: TEMP
-
-City 2, Day 5: TEMP
-
-City 2, Day 6: TEMP
-
-City 2, Day 7: TEMP
-
-*/
 
  
 
@@ -65,7 +25,7 @@ int main()
  
 
     int temperature[CITY][WEEK];
-
+    //Miami week of 4/10/2020
     temperature[0][0]=81;
     temperature[0][1]=85;
     temperature[0][2]=86;
@@ -73,6 +33,8 @@ int main()
     temperature[0][4]=87;
     temperature[0][5]=86;
     temperature[0][6]=83;
+
+    //New York week of 4/10/2020
     temperature[1][0]=57;
     temperature[1][1]=62;
     temperature[1][2]=67;
@@ -102,6 +64,7 @@ int main()
     {
         if (i==0)
         {
+          cout<<"\n\nMiami, FL\n"<<endl;
         for(int j = 0; j < WEEK; ++j)
         
           {
@@ -112,6 +75,7 @@ int main()
         }
         else
         {
+            cout<<"\n\nNew York, NY:\n"<<endl;
           for(int j = 0; j < WEEK; ++j)
           {
           cout << "New York "<< day[j] << " = " << temperature[i][j] << endl;
