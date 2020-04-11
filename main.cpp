@@ -81,6 +81,15 @@ int main()
     temperature[1][5]=53;
     temperature[1][6]=53;
     
+    string day[WEEK];
+    day[0]= "Saturday \tApril 11"; 
+    day[1] = "Sunday \tApril 12";
+    day[2] = "Monday \tApril 13";
+    day[3] = "Tuesday \tApril 14";
+    day[4] = "Wedndays \tApril 15";
+    day[5] = "Thursday \tApril 16";
+    day[6] = "Friday \tApril 17";
+
 
     cout << "\n\nForecast:\n";
 
@@ -97,7 +106,7 @@ int main()
         
           {
 
-             cout << "Miami "  << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
+             cout << "Miami "  << day[j] << " = " << temperature[i][j] << endl;
 
            }
         }
@@ -105,7 +114,7 @@ int main()
         {
           for(int j = 0; j < WEEK; ++j)
           {
-          cout << "New York "<<", Day " << j + 1 << " = " << temperature[i][j] << endl;
+          cout << "New York "<< day[j] << " = " << temperature[i][j] << endl;
           }
         }
     }
