@@ -1,8 +1,8 @@
-//Student Name:
+//Student Name: Jesus Cardenas
 
 //Teacher: Dr. Tyson McMillan
 
-//Date:
+//Date:   4/10/2020
 
 //A program to practice working with multi-dimensional arrays
 
@@ -66,35 +66,23 @@ int main()
 
     int temperature[CITY][WEEK];
 
-    //Note your input data from the above
+    temperature[0][0]=81;
+    temperature[0][1]=85;
+    temperature[0][2]=86;
+    temperature[0][3]=86;
+    temperature[0][4]=87;
+    temperature[0][5]=86;
+    temperature[0][6]=83;
+    temperature[1][0]=57;
+    temperature[1][1]=62;
+    temperature[1][2]=67;
+    temperature[1][3]=60;
+    temperature[1][4]=47;
+    temperature[1][5]=53;
+    temperature[1][6]=53;
+    
 
-    cout << "Enter all temperature for a week of first city and then second city. \n";
-
- 
-
-    // Inserting the values into the temperature array
-
-    //note for every dimension of the array you need a for loop 2 dimensions = 2 for loops
-
-    for (int i = 0; i < CITY; ++i)
-
-    {
-
-        for(int j = 0; j < WEEK; ++j)
-
-        {
-
-            cout << "City " << i + 1 << ", Day " << j + 1 << " : ";
-
-            cin >> temperature[i][j];
-
-        }
-
-    }
-
- 
-
-    cout << "\n\nDisplaying Values:\n";
+    cout << "\n\nForecast:\n";
 
  
 
@@ -103,15 +91,23 @@ int main()
     for (int i = 0; i < CITY; ++i)
 
     {
-
-        for(int j = 0; j < WEEK; ++j)
-
+        if (i==0)
         {
+        for(int j = 0; j < WEEK; ++j)
+        
+          {
 
-            cout << "City " << i + 1 << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
+             cout << "Miami "  << ", Day " << j + 1 << " = " << temperature[i][j] << endl;
 
+           }
         }
-
+        else
+        {
+          for(int j = 0; j < WEEK; ++j)
+          {
+          cout << "New York "<<", Day " << j + 1 << " = " << temperature[i][j] << endl;
+          }
+        }
     }
 
  
